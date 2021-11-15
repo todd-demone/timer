@@ -1,5 +1,5 @@
 /**
- * Emits a beep after a specified amount of time has passed
+ * Emits a beep after a specified number of seconds has passed
  * @param {Array} alarms An array of numbers, each number representing time in seconds 
  */
 const timer1 = function(alarms) {
@@ -13,6 +13,6 @@ const timer1 = function(alarms) {
     }, alarm * 1000);
   }
 };
+
 const alarms = process.argv.slice(2);
 timer1(alarms);
-
