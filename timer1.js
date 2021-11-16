@@ -33,8 +33,8 @@ const setSoundorLog = function(isSound) {
 let isSound = process.argv.slice(2, 3).join(''); // return array with 3rd item only and then convert array to string
 isSound = (isSound === 'true'); // convert string to boolean.
 const alarms = process.argv.slice(3);
-const alarmFormat = setSoundorLog(isSound);
-scheduler(alarms, alarmFormat);
+const alarmOutput = setSoundorLog(isSound);
+scheduler(alarms, alarmOutput);
 
 // Notes from Jon:
 // 1. watch bugs (e.g., alarm < 1, what if alarm = 0.5?)
